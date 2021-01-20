@@ -47,6 +47,7 @@ img {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    z-index: 999;
 }
 
 .icon {
@@ -67,5 +68,4 @@ img {
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 999;
 }
