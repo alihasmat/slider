@@ -67,4 +67,5 @@ img {
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 999;
 }
