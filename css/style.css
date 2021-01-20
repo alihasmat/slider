@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel {
+    position: relative;
+    width: 100vw;
+}
+
+.carousel__item,
+.carousel__hidden {
+    display: none;
+}
+
+.carousel__active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.actions {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+.left-btn {
+    margin-left: 50px;
+}
+
+.right-btn {
+    margin-right: 50px;
+}
+
+.left-btn, .right-btn {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
